@@ -1,0 +1,257 @@
+body {
+  background: transparent
+    url(https://s3.amazonaws.com/adp-vdl-pattern-library/images/login-background-8.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: none;
+  height: auto;
+  font-family: ProximaNova;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 200;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #959595;
+  font-family: inherit;
+}
+
+#privacyLink,
+#privacyLink:visited,
+#privacyLink:hover,
+#privacyLink:active,
+#privacyLink:focus {
+  color: #086274;
+  text-decoration: none;
+  width: fit-content;
+}
+
+#privacyLink:hover {
+  text-decoration: underline;
+}
+
+input[type="text"]:disabled,
+input[type="textarea"]:disabled,
+input[type="radio"]:disabled,
+input[type="checkbox"]:disabled,
+input[type="text"].disabled,
+input[type="textarea"].disabled,
+input[type="radio"].disabled,
+input[type="checkbox"].disabled,
+.form-select:disabled,
+fieldset:disabled input[type="text"],
+fieldset:disabled input[type="textarea"],
+fieldset:disabled input[type="radio"],
+fieldset:disabled input[type="checkbox"] {
+  cursor: not-allowed;
+  background-color: #bbbbbb;
+  color: #6a6a6a;
+}
+
+#title {
+  font-family: ProximaNova;
+  color: #959595;
+  text-align: center;
+}
+
+#formContainer {
+  background-color: #ebebeb;
+}
+
+#pageContainer {
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#titleContainer {
+  background-color: #ffffff;
+  fill: #ffffff;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#topRowContainer {
+  padding: 1em 0 0 0;
+}
+
+#bottomButtonContainer {
+  text-align: center;
+}
+
+#privacySpacer {
+  margin-right: 3em;
+}
+
+#employeeInfoNav {
+  z-index: 5;
+}
+
+#payTaxInfoNav {
+  z-index: 4;
+}
+#bankInfoNav {
+  z-index: 3;
+}
+#reviewNav {
+  z-index: 2;
+}
+
+.form {
+  margin: 1em;
+}
+
+.btn-secondary,
+.earningsDeductionsButton {
+  background-color: #1a8099;
+  border-color: #1a8099;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 25px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.2;
+  text-shadow: none;
+  text-transform: uppercase;
+  background-image: none;
+  border: 0;
+  box-shadow: none;
+  padding: 10px 17px 9px;
+}
+
+.btn-secondary:disabled,
+.earningsDeductionsButton:disabled {
+  background-color: #bbbbbb;
+  border-color: #bbbbbb;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus,
+.earningsDeductionsButton:hover,
+.earningsDeductionsButton:active,
+.earningsDeductionsButton:focus {
+  background-color: #3ebede;
+  border-color: #3ebede;
+  font-family: "ProximaNova";
+  font-weight: 300;
+  text-decoration: none;
+  color: #ffffff;
+  outline: none;
+  box-shadow: none;
+}
+
+.validationErrorText {
+  color: #d40f0f;
+}
+
+.validationErrorInput {
+  border: 1px solid #d40f0f;
+  color: #d40f0f !important;
+}
+
+.navbarLink,
+.navbarLink:hover,
+.navbarLink:visited {
+  color: white;
+  position: relative;
+  padding: 4px 15px 4px 30px;
+  width: 200px;
+  display: block;
+  border-radius: 20px;
+  margin: -4px -25px -4px 4px;
+  border: 4px solid #ebebeb;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: default;
+  text-decoration: none;
+}
+
+.navbarLink {
+  background-color: #3ebede;
+}
+
+.active {
+  background-color: #0e5061;
+}
+
+input + label,
+textarea + label {
+  color: #086274;
+  line-height: normal;
+}
+
+#formOwnerOfficer {
+  margin: 2em 0 0 1em;
+}
+
+#w4FormDownloadLink,
+#w4FormDownloadLink:visited,
+#w4FormDownloadLink:hover,
+#w4FormDownloadLink:active,
+#w4FormDownloadLink:focus {
+  color: #086274;
+  text-decoration: none;
+}
+
+#w4FormDownloadLink:hover {
+  text-decoration: underline;
+}
+
+.referenceInfoUnder {
+  font-size: 10pt;
+  color: black;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
+  font-weight: bolder;
+}
+
+#multipleJobsReferenceText {
+  margin: 0 0 0 2em;
+}
+
+#earningsDeductionsButtonsRow {
+  margin: 1.5em 0 0 0;
+}
+
+.bankinfo-image {
+  width: inherit;
+  padding-top: 25px;
+}
+
+#depositPartialColumn {
+  align-self: flex-end;
+}
+
+.tableHeader {
+  background-color: #1a8099;
+  color: white;
+}
+
+.table-sm > :not(caption) > * > * {
+  padding: 0 0 0 5px;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-width: 0;
+}
+
+.reviewEditButtons {
+  text-align: end;
+}
