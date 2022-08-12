@@ -597,6 +597,7 @@ const EmlpoyeeInfoTab = () => {
             labelCity={labelCity}
             setLabelCity={setLabelCity}
             labelWorkedInState={labelWorkedInState}
+            inputValidator={inputValidator}
           />
         </Col>
         <Col sm={2}>
