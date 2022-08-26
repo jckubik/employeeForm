@@ -1,5 +1,6 @@
 import Col from 'react-bootstrap/Col';
 import { FaExternalLinkAlt } from 'react-icons/fa';
+import ReviewTab from '../ReviewTab/ReviewTab';
 
 const Privacy = () => (
   <a

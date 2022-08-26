@@ -549,25 +549,6 @@ const PayTaxInfoTab = () => {
   const setInvalidField = (field, type) =>
     !validityStatus[field] ? `validationError${type}` : '';
 
-  // Update an object within the earningsDeductions state
-  // const updateEarningsDeductionObjects = (toUpdate, event, property) => {
-  //   setEarningsDeductions((current) =>
-  //     // Map over each object in the state array
-  //     // If the object is the one we're looking for, update the property
-  //     current.map((object) => {
-  //       if (object.id === toUpdate.id) {
-  //         return {
-  //           ...object,
-  //           [property]: event.target.value,
-  //         };
-  //       }
-
-  //       // Returns the new updated object to be put into state
-  //       return object;
-  //     })
-  //   );
-  // };
-
   // If one exists, then the other must as well
   useEffect(() => {
     let departmentNumberValid = true;
@@ -627,7 +608,6 @@ const PayTaxInfoTab = () => {
   // Set currentPage on page load
   useEffect(() => {
     dispatch(setCurrentPage({ value: 1 }));
-    console.log('setting currentPAge to 1');
   }, []);
 
   return (
@@ -916,6 +896,7 @@ const PayTaxInfoTab = () => {
                   type="radio"
                   value={radio.value}
                   id={`FederalFilingStatus-radio-${radio.value}`}
+                  key={`FederalFilingStatus-radio-${radio.value}`}
                   onClick={(event) => {
                     dispatch(
                       updateInfo({

@@ -1,22 +1,15 @@
 import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { useEffect, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import {
-  setCurrentPage,
-  setPageAccessibility,
-  setReviewAccess,
-} from '../Slices/navigationSlice';
+import { setPageAccessibility } from '../Slices/navigationSlice';
 
 const NavRow = () => {
   const dispatch = useDispatch();
-  const { pages, currentPage, reviewAccessible } = useSelector(
-    (state) => state.navigation
-  );
+  const { pages } = useSelector((state) => state.navigation);
   const employeeInfo = useSelector((state) => state.employeeInfo);
   const payTaxInfo = useSelector((state) => state.payTaxInfo);
   const bankInfo = useSelector((state) => state.bankInfo);
@@ -53,11 +46,6 @@ const NavRow = () => {
       })
     );
   }, [bankInfo.allValid, bankInfo.allRequired]);
-
-  useEffect(() => {
-    console.log(pages);
-    console.log('current page:', currentPage);
-  }, [pages, currentPage]);
 
   const handleNavigation = (event, accessible) => {
     if (!accessible) {

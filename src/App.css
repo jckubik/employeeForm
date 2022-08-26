@@ -1,12 +1,5 @@
 body {
-  background: transparent
-    url(https://s3.amazonaws.com/adp-vdl-pattern-library/images/login-background-8.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: none;
-  height: auto;
-  font-family: ProximaNova;
+  background-color: #74726d;
 }
 
 h1 {

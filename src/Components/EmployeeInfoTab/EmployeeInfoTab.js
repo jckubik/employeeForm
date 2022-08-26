@@ -277,7 +277,6 @@ const EmlpoyeeInfoTab = () => {
   // Set currentPage on page load
   useEffect(() => {
     dispatch(setCurrentPage({ value: 0 }));
-    console.log('setting currentPAge to 0');
   }, []);
 
   return (
